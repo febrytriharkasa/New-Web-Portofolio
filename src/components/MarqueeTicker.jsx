@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 
 const items = [
-  { kind: 'dot', text: 'FULLSTACK WEB DEVELOPER', dotClass: 'bg-primary', ping: true },
+  { kind: 'dot', text: 'BACKEND WEB DEVELOPER', dotClass: 'bg-primary', ping: true },
   { kind: 'sep' },
   { kind: 'text', text: 'REACT.JS & TAILWIND CSS' },
   { kind: 'sep' },

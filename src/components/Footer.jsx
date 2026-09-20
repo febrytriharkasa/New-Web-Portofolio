@@ -21,10 +21,10 @@ export default function Footer() {
             <div className="flex items-center gap-space-xs">
               <div className="flex flex-col">
                 <span className="font-headline-sm text-headline-sm text-on-surface uppercase font-bold leading-tight">FBRYTh</span>
-                <span className="font-label-sm text-label-sm text-primary uppercase font-bold">Febry Tri Harkasa • Fullstack Web Developer</span>
+                <span className="font-label-sm text-label-sm text-primary uppercase font-bold">Febry Tri Harkasa • Backend Web Developer</span>
               </div>
             </div>
-            <p className="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">Pengembangan aplikasi web modern yang terintegrasi dari front-end hingga back-end. Berfokus pada kode yang bersih, performa tinggi, dan antarmuka neo-brutalism yang responsif</p>
+            <p className="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">Berfokus pada pengembangan sistem back-end berkinerja tinggi dan clean code, yang diintegrasikan secara mulus dengan eksplorasi front-end untuk menghadirkan aplikasi web yang responsif.</p>
           </motion.div>
 
           <motion.div
@@ -115,7 +115,7 @@ export default function Footer() {
                 <span className="font-label-sm text-[11px] text-primary uppercase font-bold">STATUS KETERSEDIAAN</span><span className="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed text-[9px] font-bold font-mono">OPEN</span>
               </div>
               <span className="font-body-sm text-body-sm font-bold text-on-surface">Terbuka untuk Penuh Waktu & Lepas</span>
-              <span className="font-label-sm text-[11px] text-on-surface-variant">Full-Stack Development Projects</span>
+              <span className="font-label-sm text-[11px] text-on-surface-variant">Web Development Projects</span>
             </motion.div>
           </motion.div>
         </div>

@@ -21,12 +21,12 @@ export default function SkillsSection() {
   const [log, setLog] = useState('> [System] Klik salah satu kartu di atas untuk melihat detail alur kerja.')
 
   const skills = [
-    { label: 'React.js & Vite', bg: 'hover:bg-tertiary-fixed', icon: <span className="flex items-center gap-1"><img src={reactLogo} alt="" width="16" height="16" /><img src={viteLogo} alt="" width="16" height="16" /></span> },
-    { label: 'Tailwind & Bootstrap', bg: 'hover:bg-secondary-container', icon: <TailwindIcon /> },
     { label: 'PHP & Laravel/CI', bg: 'hover:bg-primary-fixed', icon: <LaravelIcon /> },
     { label: 'MySQL Database', bg: 'hover:bg-tertiary-fixed-dim', icon: <MySQLIcon /> },
     { label: 'RESTful API', bg: 'hover:bg-secondary-fixed', icon: <span className="material-symbols-outlined text-[16px]">api</span> },
     { label: 'Git & GitHub', bg: 'hover:bg-primary-container', icon: <span className="material-symbols-outlined text-[16px]">hub</span> },
+    { label: 'React.js & Vite', bg: 'hover:bg-tertiary-fixed', icon: <span className="flex items-center gap-1"><img src={reactLogo} alt="" width="16" height="16" /><img src={viteLogo} alt="" width="16" height="16" /></span> },
+    { label: 'Tailwind & Bootstrap', bg: 'hover:bg-secondary-container', icon: <TailwindIcon /> },
   ]
 
   return (
@@ -65,7 +65,9 @@ export default function SkillsSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.36, duration: 0.45 }}
             >
-              Kombinasi teknologi dan alat kerja yang saya gunakan untuk merancang, membangun, dan mengoptimalkan aplikasi web modern dari sisi front-end hingga back-end.
+              Tumpukan teknologi yang saya gunakan dengan fokus 
+              utama membangun logika server dan arsitektur basis data yang andal, 
+              didukung oleh alat front-end modern untuk integrasi antarmuka yang utuh.
             </motion.p>
             <motion.div
               className="flex flex-wrap gap-space-xs pt-space-xs"
@@ -97,10 +99,10 @@ export default function SkillsSection() {
               transition={{ delay: 0.72, duration: 0.4 }}
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-xs font-label-sm text-label-sm">
-                <div className="flex items-center gap-2"><span className="text-tertiary font-bold">✔</span> Desain Responsif &amp; Mobile-First</div>
                 <div className="flex items-center gap-2"><span className="text-tertiary font-bold">✔</span> Pengelolaan Basis Data Teroptimasi</div>
+                <div className="flex items-center gap-2"><span className="text-tertiary font-bold">✔</span> Integrasi RESTful API</div>
                 <div className="flex items-center gap-2"><span className="text-tertiary font-bold">✔</span> Kode Terstruktur &amp; Mudah Dipelihara</div>
-                <div className="flex items-center gap-2"><span className="text-tertiary font-bold">✔</span> Integrasi RESTful API yang Aman</div>
+                <div className="flex items-center gap-2"><span className="text-tertiary font-bold">✔</span> Integrasi Antarmuka Web Modern</div>
               </div>
             </motion.div>
           </motion.div>
@@ -120,7 +122,7 @@ export default function SkillsSection() {
                 </span>
                 <span className="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Tekan Tombol</span>
               </div>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">Siklus pengembangan aplikasi yang saya terapkan, mulai dari perancangan antarmuka, logika server, hingga proses rilis.</p>
+              <p className="font-body-sm text-body-sm text-on-surface-variant">Siklus pengembangan aplikasi yang saya terapkan, mulai dari perancangan basis data, pemrosesan logika server, integrasi antarmuka, hingga proses rilis.</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs">
                 <motion.div
                   onClick={() => setLog('> [Front-End] Rendering komponen UI responsif dengan React & Tailwind CSS.')}

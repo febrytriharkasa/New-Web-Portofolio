@@ -24,7 +24,7 @@ export const AboutProfile = () => (
       </div>
       <div className="relative z-10 w-full max-w-full px-2">
         <div className="font-headline-sm text-lg sm:text-headline-sm uppercase text-on-surface font-bold break-words">Febry Tri Harkasa</div>
-        <div className="font-label-sm text-xs sm:text-label-sm text-primary font-bold uppercase mt-0.5 break-words">Fullstack Web Developer</div>
+        <div className="font-label-sm text-xs sm:text-label-sm text-primary font-bold uppercase mt-0.5 break-words">Backend Web Developer</div>
       </div>
       <div className="relative z-10 w-full grid grid-cols-1 gap-2 pt-2 border-t-2 border-outline-variant font-label-sm text-[10px] sm:text-[11px]">
         <div className="p-1.5 bg-surface-bright rounded border border-on-surface text-center break-words">
@@ -50,12 +50,30 @@ export const AboutProfile = () => (
         </div>
       </div>
       <h3 className="font-headline-md text-xl md:text-headline-md text-on-surface uppercase font-bold break-words">
-        MENGEMBANGKAN APLIKASI WEB INTERAKTIF & RESPONSIF
+        MEMBANGUN SISTEM WEB YANG AMAN DAN TERUKUR
       </h3>
       <p className="font-body-md text-sm md:text-body-md text-on-surface-variant break-words">
-        Saya adalah Fullstack Web Developer yang berfokus pada pembangunan aplikasi web full-stack yang responsif, terstruktur, dan memiliki antarmuka interaktif. Berbekal pengalaman menggunakan React dan Laravel, saya mentransformasi rancangan UI/UX menjadi sistem web berkinerja tinggi yang nyaman digunakan.
+        Saya adalah Backend Web Developer yang berfokus pada arsitektur sistem, 
+        pengelolaan basis data, dan pengembangan API yang efisien. Dengan 
+        kekuatan utama pada logika back-end (Laravel/CI4), saat ini saya juga 
+        sedang memperdalam end-to-end development dengan belajar mengintegrasikan 
+        antarmuka modern menggunakan React untuk menciptakan aplikasi web yang fungsional dari hulu ke hilir.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-xs pt-space-2xs">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.5, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23]"
+        >
+          <div className="flex items-center gap-1.5 text-tertiary font-headline-sm font-bold text-base sm:text-headline-sm">
+            <span className="material-symbols-outlined text-lg">brush</span> System Integration
+          </div>
+          <p className="font-body-sm text-[13px] text-on-surface-variant mt-1">
+            Mampu menghubungkan logika server yang kompleks dengan antarmuka modern, memastikan data mengalir dengan tepat dari database hingga ke pengguna akhir.
+          </p>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,10 +82,10 @@ export const AboutProfile = () => (
           className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23]"
         >
           <div className="flex items-center gap-1.5 text-primary font-headline-sm font-bold text-base sm:text-headline-sm">
-            <span className="material-symbols-outlined text-lg">electric_bolt</span> High Performance
+            <span className="material-symbols-outlined text-lg">data_object</span> RESTful API
           </div>
           <p className="font-body-sm text-[13px] text-on-surface-variant mt-1">
-            Optimasi komponen dan lazy loading untuk kecepatan muat web yang maksimal di berbagai perangkat.
+            Membangun dan mendokumentasikan titik akhir endpoint API yang aman, cepat, dan mudah diintegrasikan dengan aplikasi front-end maupun pihak ketiga.
           </p>
         </motion.div>
         <motion.div
@@ -82,20 +100,6 @@ export const AboutProfile = () => (
           </div>
           <p className="font-body-sm text-[13px] text-on-surface-variant mt-1">
             Perancangan basis data relasional yang efisien, kueri terstruktur, dan integrasi API yang aman dengan Laravel.
-          </p>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-40px' }}
-          transition={{ duration: 0.5, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23]"
-        >
-          <div className="flex items-center gap-1.5 text-tertiary font-headline-sm font-bold text-base sm:text-headline-sm">
-            <span className="material-symbols-outlined text-lg">brush</span> Fully Responsive
-          </div>
-          <p className="font-body-sm text-[13px] text-on-surface-variant mt-1">
-            Layout antarmuka yang adaptif dan presisi di semua ukuran layar, dari smartphone hingga desktop.
           </p>
         </motion.div>
       </div>
