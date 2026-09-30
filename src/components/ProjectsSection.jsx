@@ -3,11 +3,32 @@ import { useState, useRef } from 'react'
 import imgJerigenKocor from '../assets/project/jerigen-kocor.webp';
 import imgSimak from '../assets/project/dashboardSimak.webp';
 import imgEdinkes from '../assets/project/edinkes.webp';
-import imgPicolo from '../assets/project/projekGame.webp';
 import imgMathventure from '../assets/project/mathventure.webp';
+import imgAdminDashnoard from '../assets/project/adminDahsboard.webp';
+import imgWebCoffe from '../assets/project/webCoffe.webp';
 
 
 const projects = [
+  {
+    title: 'Website Katalog Ayzel Coffe',
+    catClass: 'bg-tertiary-fixed-dim text-on-tertiary-fixed',
+    status: 'Freelance Project',
+    desc: 'Antarmuka pelanggan yang responsif dan modern untuk menampilkan katalog produk kopi premium. Dibangun menggunakan React.js dan Tailwind CSS, aplikasi ini berfokus pada navigasi yang intuitif dan pengalaman pemesanan yang mulus bagi pengguna.',
+    physics: 'Stack: React.Js · Vite · Tailwind',
+    tech: ['React.Js', 'Vite', 'Tailwind'],
+    image: imgWebCoffe,
+    links: {github: 'https://github.com/febrytriharkasa/Website-E-Commerce-Coffe-Ayzel.git' },
+  },
+  {
+    title: 'Admin Dashboard Ayzel Coffe',
+    catClass: 'bg-tertiary-fixed-dim text-on-tertiary-fixed',
+    status: 'Freelance Project',
+    desc: 'Sistem manajemen terpusat dan API backend berbasis CodeIgniter 4. Dilengkapi fitur pemantauan analitik penjualan real-time, grafik arus kas, manajemen stok produk, serta pelacakan operasional shift kedai untuk mendukung keputusan bisnis.',
+    physics: 'Stack: CI4 · PHP · Tailwind',
+    tech: ['CI4', 'PHP', 'Tailwind'],
+    image: imgAdminDashnoard,
+    links: {github: 'https://github.com/febrytriharkasa/Website-E-Commerce-Coffe-Ayzel.git' },
+  },
   {
     title: 'Landing Pages Jerigen Kocor',
     catClass: 'bg-tertiary-fixed text-on-tertiary-fixed',
@@ -37,16 +58,6 @@ const projects = [
     tech: ['Laravel', 'React', 'JQuery', 'MySQL', 'Internship Contribution'],
     image: imgEdinkes,
     links: {},
-  },
-  {
-    title: 'Picollo Adventure',
-    catClass: 'bg-tertiary-fixed-dim text-on-tertiary-fixed',
-    status: 'Personal Project',
-    desc: 'Game platformer edukasi 2D berbasis Unity. Menghadirkan tantangan teka-teki interaktif, sistem skor, tingkatan level, dan animasi mulus 60 FPS.',
-    physics: 'Stack: Unity · C# · 2D',
-    tech: ['Unity', 'C#', '2D Game'],
-    image: imgPicolo,
-    links: {github: 'https://github.com/febrytriharkasa/Picollo-Adventure.git' },
   },
   {
     title: 'Mathventure',

@@ -41,7 +41,7 @@ const HeroAvatar = ({ onSquish }) => {
 }
 
 const phrases = [
-  'Backend Web Developer • 165 FPS',
+  'Fullstack Web Developer • 165 FPS',
   'Powered by Coffee & Clean Code',
   'Bug Ratio: 0.01% | Tea: 100%',
   'Git Push: Force (Just Kidding)',
@@ -93,7 +93,7 @@ export default function HomeSection() {
           >
             <div className="font-label-md text-label-md text-primary uppercase font-bold tracking-widest mb-1">PORTFOLIO // CREATIVE PROFILE</div>
             <h1 className="font-display-hero text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight break-words">
-              Febry Tri Harkasa <span className="text-secondary-container inline-block">//</span> Backend Web Developer
+              Febry Tri Harkasa <span className="text-secondary-container inline-block">//</span> Jr. Fullstack Web Developer
             </h1>
           </motion.div>
 
@@ -104,14 +104,13 @@ export default function HomeSection() {
             viewport={viewportOpts}
             className="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
           >
-            Hai! Saya Febry Tri Harkasa, Web Developer dengan spesialisasi kuat di ranah Back-End. 
-            Saya berfokus membangun arsitektur dan sistem logika web yang tangguh menggunakan Laravel. 
-            Untuk melengkapi keahlian tersebut, saat ini saya juga sedang aktif memperdalam ilmu 
-            Front-End menggunakan React dan Tailwind CSS agar dapat memahami alur kerja menyeluruh 
-            dan berkontribusi secara end-to-end.
+            Hai! Saya Febry Tri Harkasa, Junior Fullstack Web Developer yang sangat antusias memecahkan masalah logika 
+            di balik layar menggunakan Laravel. Untuk melengkapi keahlian tersebut, saat ini saya sedang mengeksplorasi 
+            sisi Front-End dengan React, Vue, dan Tailwind CSS. Tujuannya sederhana: memahami alur kerja aplikasi web 
+            secara menyeluruh agar bisa berkontribusi penuh secara end-to-end.
           </motion.p>
 
-          {/* <motion.div
+          <motion.div
             variants={slideLeft}
             initial="hidden"
             whileInView="visible"
@@ -126,7 +125,7 @@ export default function HomeSection() {
                 {t}
               </span>
             ))}
-          </motion.div> */}
+          </motion.div>
 
           <motion.div
             variants={slideRotate}

@@ -24,7 +24,7 @@ export const AboutProfile = () => (
       </div>
       <div className="relative z-10 w-full max-w-full px-2">
         <div className="font-headline-sm text-lg sm:text-headline-sm uppercase text-on-surface font-bold break-words">Febry Tri Harkasa</div>
-        <div className="font-label-sm text-xs sm:text-label-sm text-primary font-bold uppercase mt-0.5 break-words">Backend Web Developer</div>
+        <div className="font-label-sm text-xs sm:text-label-sm text-primary font-bold uppercase mt-0.5 break-words">Jr. Fullstack Web Developer</div>
       </div>
       <div className="relative z-10 w-full grid grid-cols-1 gap-2 pt-2 border-t-2 border-outline-variant font-label-sm text-[10px] sm:text-[11px]">
         <div className="p-1.5 bg-surface-bright rounded border border-on-surface text-center break-words">
@@ -53,11 +53,10 @@ export const AboutProfile = () => (
         MEMBANGUN SISTEM WEB YANG AMAN DAN TERUKUR
       </h3>
       <p className="font-body-md text-sm md:text-body-md text-on-surface-variant break-words">
-        Saya adalah Backend Web Developer yang berfokus pada arsitektur sistem, 
-        pengelolaan basis data, dan pengembangan API yang efisien. Dengan 
-        kekuatan utama pada logika back-end (Laravel/CI4), saat ini saya juga 
-        sedang memperdalam end-to-end development dengan belajar mengintegrasikan 
-        antarmuka modern menggunakan React untuk menciptakan aplikasi web yang fungsional dari hulu ke hilir.
+        Saya adalah Junior Fullstack Web Developer dengan minat besar pada pengelolaan basis data dan pengembangan API. 
+        Memiliki fondasi pada logika back-end menggunakan Laravel/CI4, saat ini saya sedang memperluas keahlian 
+        ke arah pengembangan end-to-end. Saya aktif belajar mengintegrasikan antarmuka modern dengan React agar 
+        siap berkontribusi membangun aplikasi web yang fungsional dari hulu ke hilir.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-xs pt-space-2xs">
         <motion.div

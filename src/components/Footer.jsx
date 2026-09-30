@@ -20,8 +20,8 @@ export default function Footer() {
           >
             <div className="flex items-center gap-space-xs">
               <div className="flex flex-col">
-                <span className="font-headline-sm text-headline-sm text-on-surface uppercase font-bold leading-tight">FBRYTh</span>
-                <span className="font-label-sm text-label-sm text-primary uppercase font-bold">Febry Tri Harkasa • Backend Web Developer</span>
+                <span className="font-headline-sm text-headline-sm text-on-surface uppercase font-bold leading-tight">FBRYTH</span>
+                <span className="font-label-sm text-label-sm text-primary uppercase font-bold">Febry Tri Harkasa • Jr. Fullstack Web Developer</span>
               </div>
             </div>
             <p className="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">Berfokus pada pengembangan sistem back-end berkinerja tinggi dan clean code, yang diintegrasikan secara mulus dengan eksplorasi front-end untuk menghadirkan aplikasi web yang responsif.</p>
