@@ -17,7 +17,7 @@ const projects = [
     physics: 'Stack: React.Js · Vite · Tailwind',
     tech: ['React.Js', 'Vite', 'Tailwind'],
     image: imgWebCoffe,
-    links: {github: 'https://github.com/febrytriharkasa/Website-E-Commerce-Coffe-Ayzel.git' },
+    links: {demo: 'https://e-commerce-ayzel-coffe.vercel.app/', github: 'https://github.com/febrytriharkasa/Website-E-Commerce-Coffe-Ayzel.git' },
   },
   {
     title: 'Admin Dashboard Ayzel Coffe',
@@ -27,7 +27,7 @@ const projects = [
     physics: 'Stack: CI4 · PHP · Tailwind',
     tech: ['CI4', 'PHP', 'Tailwind'],
     image: imgAdminDashnoard,
-    links: {github: 'https://github.com/febrytriharkasa/Website-E-Commerce-Coffe-Ayzel.git' },
+    links: {demo: 'https://ayzel-coffee-dashboard.infinityfreeapp.com/', github: 'https://github.com/febrytriharkasa/Website-E-Commerce-Coffe-Ayzel.git' },
   },
   {
     title: 'Landing Pages Jerigen Kocor',
@@ -209,7 +209,7 @@ export default function ProjectsSection() {
             </motion.div>
 
             <motion.h3
-              className="font-headline-lg text-headline-lg-mobile md:text-headline-md text-on-surface uppercase"
+              className="font-headline-lg text-xl sm:text-headline-lg-mobile md:text-headline-md text-on-surface uppercase"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.18, duration: 0.3 }}
@@ -218,7 +218,7 @@ export default function ProjectsSection() {
             </motion.h3>
 
             <motion.p
-              className="font-body-md text-body-md text-on-surface-variant"
+              className="font-body-md text-xs sm:text-body-sm md:text-body-md text-on-surface-variant"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.24, duration: 0.35 }}
@@ -235,7 +235,7 @@ export default function ProjectsSection() {
               {p.tech.map((t) => (
                 <motion.span
                   key={t}
-                  className="px-2 py-0.5 rounded border border-on-surface bg-surface-container text-on-surface font-label-sm"
+                  className="px-1.5 py-0.5 sm:px-2 rounded border border-on-surface bg-surface-container text-on-surface text-[9px] sm:text-[10px] md:text-label-sm font-label-sm"
                   variants={{ initial: { opacity: 0, scale: 0.85 }, animate: { opacity: 1, scale: 1 } }}
                   whileHover={{ y: -3, scale: 1.06, transition: { duration: 0.15 } }}
                 >
@@ -252,7 +252,7 @@ export default function ProjectsSection() {
             >
               {p.links.demo ? (
                 <motion.a
-                  className="inline-flex items-center gap-1.5 px-space-md py-space-xs rounded-lg border-2 border-on-surface bg-primary text-on-primary font-label-md text-label-md uppercase shadow-[3px_3px_0px_#191b23] font-bold"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-space-md sm:py-space-xs rounded-lg border-2 border-on-surface bg-primary text-on-primary font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase shadow-[2px_2px_0px_#191b23] sm:shadow-[3px_3px_0px_#191b23] font-bold"
                   href={p.links.demo}
                   target="_blank"
                   rel="noreferrer"
@@ -260,12 +260,12 @@ export default function ProjectsSection() {
                   whileTap={{ y: 1, x: 1, boxShadow: '1px 1px 0px #191b23' }}
                   transition={{ duration: 0.2 }}
                 >
-                  Live Demo <span className="material-symbols-outlined text-sm">north_east</span>
+                  Live Demo <span className="material-symbols-outlined text-[12px] sm:text-sm">north_east</span>
                 </motion.a>
               ) : null}
               {p.links.github ? (
                 <motion.a
-                  className="inline-flex items-center gap-1.5 px-space-md py-space-xs rounded-lg border-2 border-on-surface bg-surface-bright text-on-surface font-label-md text-label-md uppercase shadow-[3px_3px_0px_#191b23] font-bold"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-space-md sm:py-space-xs rounded-lg border-2 border-on-surface bg-surface-bright text-on-surface font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase shadow-[2px_2px_0px_#191b23] sm:shadow-[3px_3px_0px_#191b23] font-bold"
                   href={p.links.github}
                   target="_blank"
                   rel="noreferrer"
@@ -273,7 +273,7 @@ export default function ProjectsSection() {
                   whileTap={{ y: 1, x: 1, boxShadow: '1px 1px 0px #191b23' }}
                   transition={{ duration: 0.2 }}
                 >
-                  GitHub <span className="material-symbols-outlined text-sm">code</span>
+                  GitHub <span className="material-symbols-outlined text-[12px] sm:text-sm">code</span>
                 </motion.a>
               ) : null}
             </motion.div>

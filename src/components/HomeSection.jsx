@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useState, useCallback, useRef } from 'react'
 import { Link } from 'react-scroll'
 import imgMe from '../assets/fotoMe2.webp';
+import resumePdf from '../assets/file/resume_CV.pdf';
 
 const HeroAvatar = ({ onSquish }) => {
   const avatarRef = useRef(null)
@@ -106,7 +107,7 @@ export default function HomeSection() {
           >
             Hai! Saya Febry Tri Harkasa, Junior Fullstack Web Developer yang sangat antusias memecahkan masalah logika 
             di balik layar menggunakan Laravel. Untuk melengkapi keahlian tersebut, saat ini saya sedang mengeksplorasi 
-            sisi Front-End dengan React, Vue, dan Tailwind CSS. Tujuannya sederhana: memahami alur kerja aplikasi web 
+            sisi Front-End dengan React, Vue, dan Tailwind CSS. Tujuannya sederhana untuk memahami alur kerja aplikasi web 
             secara menyeluruh agar bisa berkontribusi penuh secara end-to-end.
           </motion.p>
 
@@ -139,10 +140,19 @@ export default function HomeSection() {
               smooth
               duration={600}
               offset={-80}
-              className="inline-flex items-center justify-center gap-space-2xs px-space-md py-space-sm rounded-lg border-[2.5px] border-on-surface bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-[5px_5px_0px_#191b23] font-bold hover:scale-105 hover:-translate-y-1 active:scale-95 transition-all"
+              className="inline-flex items-center justify-center gap-space-2xs px-space-md py-space-sm rounded-lg border-[2.5px] border-on-surface bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-[5px_5px_0px_#191b23] font-bold hover:scale-105 hover:-translate-y-1 active:scale-95 transition-all cursor-pointer"
             >
               <span className="material-symbols-outlined text-[20px]">view_carousel</span> Lihat Proyek Pilihan
             </Link>
+
+            <a
+              href={resumePdf}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-space-2xs px-space-md py-space-sm rounded-lg border-[2.5px] border-on-surface bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase tracking-wider shadow-[5px_5px_0px_#191b23] font-bold hover:scale-105 hover:-translate-y-1 hover:bg-tertiary-container active:scale-95 transition-all hover:text-on-primary"
+            >
+              <span className="material-symbols-outlined text-[20px]">description</span> Preview Resume
+            </a>
           </motion.div>
 
           <motion.div

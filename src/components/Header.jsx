@@ -8,6 +8,7 @@ import imgLogo from '../assets/logo.png';
 const items = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Portfolio' },
   { id: 'sandbox', label: 'Skills' },
   { id: 'contact', label: 'Contact' },

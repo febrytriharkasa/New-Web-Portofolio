@@ -4,6 +4,7 @@ import MarqueeTicker from './components/MarqueeTicker'
 import HomeSection from './components/HomeSection'
 
 const AboutSection = lazy(() => import('./components/AboutSection'))
+const ExperienceSection = lazy(() => import('./components/ExperienceSection'))
 const ProjectsSection = lazy(() => import('./components/ProjectsSection'))
 const SkillsSection = lazy(() => import('./components/SkillsSection'))
 const ContactSection = lazy(() => import('./components/ContactSection'))
@@ -28,6 +29,7 @@ export default function App() {
           <HomeSection />
           <Suspense fallback={<SectionLoader />}>
             <AboutSection />
+            <ExperienceSection />
             <ProjectsSection />
             <SkillsSection />
             <ContactSection />
