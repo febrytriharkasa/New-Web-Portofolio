@@ -58,18 +58,19 @@ export const AboutProfile = () => (
         ke arah pengembangan end-to-end. Saya aktif belajar mengintegrasikan antarmuka modern dengan React agar 
         siap berkontribusi membangun aplikasi web yang fungsional dari hulu ke hilir.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-xs pt-space-2xs">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-space-xs pt-space-2xs">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.5, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23]"
+          className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23] min-w-0"
         >
-          <div className="flex items-center gap-1.5 text-tertiary font-headline-sm font-bold text-base sm:text-headline-sm">
-            <span className="material-symbols-outlined text-lg">brush</span> System Integration
+          <div className="flex items-center gap-1.5 text-tertiary font-headline-sm font-bold text-sm sm:text-base lg:text-sm xl:text-headline-sm min-w-0">
+            <span className="material-symbols-outlined text-lg shrink-0">brush</span>
+            <span className="truncate">System Integration</span>
           </div>
-          <p className="font-body-sm text-[13px] text-on-surface-variant mt-1">
+          <p className="font-body-sm text-[13px] text-on-surface-variant mt-1 break-words">
             Mampu menghubungkan logika server yang kompleks dengan antarmuka modern, memastikan data mengalir dengan tepat dari database hingga ke pengguna akhir.
           </p>
         </motion.div>
@@ -78,12 +79,13 @@ export const AboutProfile = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.5, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23]"
+          className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23] min-w-0"
         >
-          <div className="flex items-center gap-1.5 text-primary font-headline-sm font-bold text-base sm:text-headline-sm">
-            <span className="material-symbols-outlined text-lg">data_object</span> RESTful API
+          <div className="flex items-center gap-1.5 text-primary font-headline-sm font-bold text-sm sm:text-base lg:text-sm xl:text-headline-sm min-w-0">
+            <span className="material-symbols-outlined text-lg shrink-0">data_object</span>
+            <span className="truncate">RESTful API</span>
           </div>
-          <p className="font-body-sm text-[13px] text-on-surface-variant mt-1">
+          <p className="font-body-sm text-[13px] text-on-surface-variant mt-1 break-words">
             Membangun dan mendokumentasikan titik akhir endpoint API yang aman, cepat, dan mudah diintegrasikan dengan aplikasi front-end maupun pihak ketiga.
           </p>
         </motion.div>
@@ -92,12 +94,13 @@ export const AboutProfile = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.5, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23]"
+          className="p-space-xs rounded-xl border-2 border-on-surface bg-surface-container shadow-[3px_3px_0px_#191b23] min-w-0"
         >
-          <div className="flex items-center gap-1.5 text-secondary font-headline-sm font-bold text-base sm:text-headline-sm">
-            <span className="material-symbols-outlined text-lg">all_inclusive</span> Database
+          <div className="flex items-center gap-1.5 text-secondary font-headline-sm font-bold text-sm sm:text-base lg:text-sm xl:text-headline-sm min-w-0">
+            <span className="material-symbols-outlined text-lg shrink-0">all_inclusive</span>
+            <span className="truncate">Database</span>
           </div>
-          <p className="font-body-sm text-[13px] text-on-surface-variant mt-1">
+          <p className="font-body-sm text-[13px] text-on-surface-variant mt-1 break-words">
             Perancangan basis data relasional yang efisien, kueri terstruktur, dan integrasi API yang aman dengan Laravel.
           </p>
         </motion.div>

@@ -9,7 +9,7 @@ const experiences = [
     typeClass: 'bg-tertiary-fixed text-on-tertiary-fixed',
     entity: 'Freelance',
     role: 'Fullstack Web Developer',
-    location: 'Sidoarjo, Jawa Timur-Remote',
+    location: 'Sidoarjo, Jawa Timur - Remote',
     skills: ['React.js', 'CodeIgniter 4', 'Laravel', 'Tailwind CSS', 'MySQL', 'PostgreSQL', 'RESTful API'],
     icon: 'work',
   },
@@ -20,7 +20,7 @@ const experiences = [
     typeClass: 'bg-secondary-fixed text-on-secondary-fixed-variant',
     entity: 'Yayasan Al-Khusnaniyah / Platform SIMAK',
     role: 'Fullstack Web Developer Intern',
-    location: 'Sidoarjo, Jawa Timur-Remote',
+    location: 'Sidoarjo, Jawa Timur - Remote',
     skills: ['Laravel', 'MySQL', 'JQuery', 'Tailwind CSS'],
     icon: 'apartment',
   },
@@ -185,7 +185,6 @@ export default function ExperienceSection() {
                         </div>
 
                         <div className="font-body-sm text-[12px] sm:text-[13px] text-on-surface-variant mt-2 flex items-center gap-1">
-                          <span className="material-symbols-outlined text-sm">location_on</span>
                           <span>{item.location}</span>
                         </div>
 

@@ -92,7 +92,6 @@ export default function HomeSection() {
             whileInView="visible"
             viewport={viewportOpts}
           >
-            <div className="font-label-md text-label-md text-primary uppercase font-bold tracking-widest mb-1">PORTFOLIO // CREATIVE PROFILE</div>
             <h1 className="font-display-hero text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight break-words">
               Febry Tri Harkasa <span className="text-secondary-container inline-block">//</span> Jr. Fullstack Web Developer
             </h1>

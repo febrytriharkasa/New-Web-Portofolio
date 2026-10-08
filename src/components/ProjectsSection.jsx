@@ -243,42 +243,41 @@ export default function ProjectsSection() {
                 </motion.span>
               ))}
             </motion.div>
-
-            <motion.div
-              className="pt-space-md mt-space-sm border-t-2 border-outline-variant flex flex-wrap items-center gap-space-sm"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.48, duration: 0.4 }}
-            >
-              {p.links.demo ? (
-                <motion.a
-                  className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-space-md sm:py-space-xs rounded-lg border-2 border-on-surface bg-primary text-on-primary font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase shadow-[2px_2px_0px_#191b23] sm:shadow-[3px_3px_0px_#191b23] font-bold"
-                  href={p.links.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  whileHover={{ y: -3, x: -2, boxShadow: '5px 5px 0px #191b23' }}
-                  whileTap={{ y: 1, x: 1, boxShadow: '1px 1px 0px #191b23' }}
-                  transition={{ duration: 0.2 }}
-                >
-                  Live Demo <span className="material-symbols-outlined text-[12px] sm:text-sm">north_east</span>
-                </motion.a>
-              ) : null}
-              {p.links.github ? (
-                <motion.a
-                  className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-space-md sm:py-space-xs rounded-lg border-2 border-on-surface bg-surface-bright text-on-surface font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase shadow-[2px_2px_0px_#191b23] sm:shadow-[3px_3px_0px_#191b23] font-bold"
-                  href={p.links.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  whileHover={{ y: -3, x: -2, boxShadow: '5px 5px 0px #191b23' }}
-                  whileTap={{ y: 1, x: 1, boxShadow: '1px 1px 0px #191b23' }}
-                  transition={{ duration: 0.2 }}
-                >
-                  GitHub <span className="material-symbols-outlined text-[12px] sm:text-sm">code</span>
-                </motion.a>
-              ) : null}
-            </motion.div>
           </div>
         </div>
+        <motion.div
+          className="pt-space-md mt-space-sm border-t-2 border-outline-variant flex flex-wrap items-center gap-space-sm justify-end"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.48, duration: 0.4 }}
+        >
+          {p.links.demo ? (
+            <motion.a
+              className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-space-md sm:py-space-xs rounded-lg border-2 border-on-surface bg-primary text-on-primary font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase shadow-[2px_2px_0px_#191b23] sm:shadow-[3px_3px_0px_#191b23] font-bold"
+              href={p.links.demo}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ y: -3, x: -2, boxShadow: '5px 5px 0px #191b23' }}
+              whileTap={{ y: 1, x: 1, boxShadow: '1px 1px 0px #191b23' }}
+              transition={{ duration: 0.2 }}
+            >
+              Live Demo <span className="material-symbols-outlined text-[12px] sm:text-sm">north_east</span>
+            </motion.a>
+          ) : null}
+          {p.links.github ? (
+            <motion.a
+              className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-space-md sm:py-space-xs rounded-lg border-2 border-on-surface bg-surface-bright text-on-surface font-label-sm sm:font-label-md text-[11px] sm:text-label-md uppercase shadow-[2px_2px_0px_#191b23] sm:shadow-[3px_3px_0px_#191b23] font-bold"
+              href={p.links.github}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ y: -3, x: -2, boxShadow: '5px 5px 0px #191b23' }}
+              whileTap={{ y: 1, x: 1, boxShadow: '1px 1px 0px #191b23' }}
+              transition={{ duration: 0.2 }}
+            >
+              GitHub <span className="material-symbols-outlined text-[12px] sm:text-sm">code</span>
+            </motion.a>
+          ) : null}
+        </motion.div>
       </motion.div>
               
       <div className="flex items-center justify-end gap-space-sm w-full">
