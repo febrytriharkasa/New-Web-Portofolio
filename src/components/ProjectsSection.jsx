@@ -6,9 +6,19 @@ import imgEdinkes from '../assets/project/edinkes.webp';
 import imgMathventure from '../assets/project/mathventure.webp';
 import imgAdminDashnoard from '../assets/project/adminDahsboard.webp';
 import imgWebCoffe from '../assets/project/webCoffe.webp';
-
+import imgSma from '../assets/project/imgSma.webp';
 
 const projects = [
+  {
+    title: 'Portal Sekolah',
+    catClass: 'bg-primary-fixed-dim text-on-primary-fixed',
+    status: 'Academic Project',
+    desc: 'Portal sekolah dan CMS terpusat berbasis Laravel 13 + Inertia/React. Dilengkapi pengelolaan berita, laman, kategori, guru & tendik, pengaturan tampilan situs tanpa kode (navbar, footer, hero carousel), editor konten blok, galeri foto/video YouTube, pencarian, halaman statistik, asisten AI, serta caching berlapis untuk performa beranda.',
+    physics: 'Stack: Laravel · Inertia · React',
+    tech: ['Laravel', 'Inertia', 'React', 'Tailwind'],
+    image: imgSma,
+    links: { github: 'https://github.com/febrytriharkasa/Tugas-Saja.git' },
+  },
   {
     title: 'Website Katalog Ayzel Coffe',
     catClass: 'bg-tertiary-fixed-dim text-on-tertiary-fixed',
@@ -27,7 +37,7 @@ const projects = [
     physics: 'Stack: CI4 · PHP · Tailwind',
     tech: ['CI4', 'PHP', 'Tailwind'],
     image: imgAdminDashnoard,
-    links: {demo: 'https://ayzel-coffee-dashboard.infinityfreeapp.com/', github: 'https://github.com/febrytriharkasa/Website-E-Commerce-Coffe-Ayzel.git' },
+    links: {github: 'https://github.com/febrytriharkasa/Website-E-Commerce-Coffe-Ayzel.git' },
   },
   {
     title: 'Landing Pages Jerigen Kocor',
